@@ -1,3 +1,47 @@
 # Testing git for multiple branches
 <br>
 Following are instructions to use github account.
+
+Remote = Repository in github website
+Local = Repository in local machine
+
+***********CLONE A GITHUB REPOSITORY***********
+git clone <repo link> (Clone repo from remote to local)
+git add . (Load changes to be ready for commit)
+git commit --m (Add a stage of commit)
+git push origin main (Push all commits to github repo)
+git push -u origin main (set origin main by default once =>next time=> git push )
+git status
+git config --list (Show account details)
+
+***********ADD REMOTE REPOSITORY TO YOUR NEW LOCAL Directory***********
+git init (Initialize git)
+git remote add origin <repo link> (Connect remote directory with local)
+git remote -v (check which remote is connected to local)
+git branch (to check brance)
+git branch -M main (to rename branch to main)
+git push origin main
+
+***********BRANCHES***********
+git branch (check branch)
+git branch -M main (rename branch)
+it checkout <branch name> (to navigate)
+git checkout -b <new branch name> (to create new branch)
+git branch -d <branch name> (to delete branch)
+****MERGING CODE****
+git diff <branch name> (to compare branch to current branch)
+1) git merge <branch name> (merge two branches)
+
+2) When git pull & merge on github is done to merge codes of a branch with main.
+   It will appear as new commit on github but we have to download the code using:
+   => git pull origin main (Download the current code)
+****UNDO CHANGES****
+Case 1: staged changes (git add .)
+	git reset <File name>
+	git reset
+Case 2: commited changes (for one commit)
+	git reset Head~1
+Case 3: commited changes (for many commites)
+	git reset <commit hash>
+	git reset --hard <commit hash>
+	
