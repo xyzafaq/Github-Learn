@@ -12,6 +12,7 @@ git commit --m (Add a stage of commit) <br>
 git push origin main (Push all commits to github repo) <br>
 git push -u origin main (set origin main by default once =>next time=> git push ) <br>
 git status <br>
+git log (Check commit history) <br>
 git config --list (Show account details) <br>
  <br>
 ***********ADD REMOTE REPOSITORY TO YOUR NEW LOCAL Directory*********** <br>
